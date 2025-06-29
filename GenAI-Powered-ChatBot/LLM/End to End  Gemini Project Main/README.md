@@ -1,6 +1,6 @@
-# 💬 TinyLLaMA Chatbot – Final Year Project
+# 💬 LLaMA3 Chatbot 
 
-This project is a **locally running GenAI-powered chatbot** built using **LangChain**, **Ollama**, and **Streamlit**, powered by the lightweight `tinyllama` model for efficient offline conversational AI.
+This project is a **locally running GenAI-LLaMA3-powered chatbot** built using **LangChain**, **Ollama**, and **Streamlit**, powered by the powerful `llama3` model for efficient offline conversational AI.
 
 Developed by **Vineet Sharma (LNMIIT)** (May 2025 – June 2025).  
 Email: vneetsharma01@gmail.com
@@ -12,7 +12,7 @@ Email: vneetsharma01@gmail.com
 - 🔁 Memory-enabled conversation
 - 💾 Chat download option
 - 🎨 Stylish chat interface
-- 🧠 Powered by TinyLLaMA (local LLM)
+- 🧠 Powered by LLaMA3 (local LLM)
 - 🗑️ Clear chat history
 - 📍 Offline and open-source
 
@@ -23,13 +23,13 @@ Email: vneetsharma01@gmail.com
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/Vineet012004/tinyllama_chatbot.git
+git clone https://github.com/Vineet012004/llama3_chatbot.git
 ```
 
 ### 2. Navigate into the project folder
 
 ```bash
-cd tinyllama_chatbot
+cd llama3_chatbot
 ```
 
 ### 3. Install required Python dependencies
@@ -40,10 +40,10 @@ pip install -r requirements.txt
 
 > Make sure you have Python ≥ 3.8 installed and activated in your environment.
 
-### 4. Pull the TinyLLaMA model using Ollama
+### 4. Pull the LLaMA3 model using Ollama
 
 ```bash
-ollama pull tinyllama
+ollama pull llama3
 ```
 
 ---
@@ -73,14 +73,14 @@ Make sure you have these installed:
 - `Python 3.8+`
 - `Streamlit`
 - `LangChain`
-- `tinyllama` model (automatically downloaded via `ollama pull`)
+- `llama3` model (automatically downloaded via `ollama pull`)
 
 ---
 
 ## 📂 Folder Structure
 
 ```
-tinyllama_chatbot/
+llama3_chatbot/
 ├── app.py                 # Main Streamlit chatbot script
 ├── requirements.txt       # Required Python libraries
 └── README.md              # This file
