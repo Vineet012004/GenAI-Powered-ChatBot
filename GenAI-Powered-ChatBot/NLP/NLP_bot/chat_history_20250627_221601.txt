@@ -1,0 +1,18 @@
+You: who created you?
+Bot: This is a GenAI-powered Customer Service Chatbot developed by Vineet Sharma from LNMIIT.
+
+You: more
+Bot: Hello! How may I assist you?
+
+You: who created you?
+Bot: It was built using Python, TensorFlow, NLTK, and Tkinter as part of an AI project during May to June 2025.
+
+You: technologies used?
+Bot: It uses NLP for understanding language and deep learning to classify intents and respond accordingly.
+
+You: you are created by whom?
+Bot: I'm here to assist you with any questions or concerns you may have regarding fitness, nutrition, and recovery from gym-related injuries.
+
+You: who created you
+Bot: It was built using Python, TensorFlow, NLTK, and Tkinter as part of an AI project during May to June 2025.
+
