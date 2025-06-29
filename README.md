@@ -1,4 +1,4 @@
--> This is a lightweight AI-powered customer support chatbot built using LangChain, Streamlit, and TinyLLaMA via Ollama. -> The chatbot understands natural language queries and responds with helpful answers in real-time through an interactive and user-friendly web interface.
+-> This is a lightweight AI-powered customer support chatbot built using LangChain, Streamlit, and LLama3 via Ollama. -> The chatbot understands natural language queries and responds with helpful answers in real-time through an interactive and user-friendly web interface.
 
 
 
@@ -47,7 +47,7 @@ ollama
 Python 3.8+
 Streamlit
 LangChain
-tinyllama model (automatically downloaded via ollama pull)
+llama3 model (automatically downloaded via ollama pull)
 
 
 
