@@ -77,10 +77,10 @@ st.markdown(
     "<div class='custom-heading'>Smart AI. Simple Talk. 🚀</div>",
     unsafe_allow_html=True,
 )
-st.subheader("🧠 Memory Enabled | 💾 Save Chat | 🎨 Stylish UI")
+st.subheader("🧠 Memory Enabled | 📥 Save Chat | 🎨 Stylish UI")
 
-# Initialize Ollama with LLaMA 3 model
-ollama = Ollama(model="llama3")
+# Initialize Ollama with a lighter model for faster response
+ollama = Ollama(model="mistral")
 
 # Store message history
 if "messages" not in st.session_state:
@@ -108,18 +108,11 @@ for msg in st.session_state["messages"]:
     chat_bubble(msg["content"], is_user=(msg["role"] == "user"))
 
 
-# Generator for streaming response
+# Generator for response (non-streaming)
 def generate_response(prompt):
-    messages = [
-        {"role": msg["role"], "content": msg["content"]}
-        for msg in st.session_state["messages"]
-    ]
-    response = ollama.stream(input=prompt, messages=messages)
-    full_response = ""
-    for token in response:
-        full_response += token
-        yield token
-    st.session_state["full_message"] = full_response
+    messages = st.session_state["messages"][-5:]  # Only keep last 5 for speed
+    response = ollama.invoke(input=prompt, messages=messages)
+    return response
 
 
 # Chat input and handling
@@ -132,17 +125,14 @@ if prompt := st.chat_input("Ask me anything..."):
             '<div class="typing-dots">🤖 is typing<span class="dot-1">.</span><span class="dot-2">.</span><span class="dot-3">.</span></div>',
             unsafe_allow_html=True,
         )
-        time.sleep(1.5)
 
-        full_response = ""
-        for token in generate_response(prompt):
-            full_response += token
+        full_response = generate_response(prompt)
         chat_bubble(full_response, is_user=False)
 
     st.session_state["messages"].append({"role": "assistant", "content": full_response})
 
 # Export Chat History
-if st.button("📥 Download Chat"):
+if st.button("🗓️ Download Chat"):
     chat_log = "\n\n".join(
         [
             f"{msg['role'].upper()}: {msg['content']}"
