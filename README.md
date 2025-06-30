@@ -62,5 +62,8 @@ langchain_helper.py: This has all the langchain code
 requirements.txt: A list of required Python packages for the project.
 
 
+Project Demo on YouTube : https://youtu.be/Nl7rHX-B1Ok?si=e7rCtYgNBHQKQ4KC
+
+
 📢 Creator Info Created by: Vineet Sharma (LNMIIT) Email: vneetsharma01@gmail.com 
     Duration: May 2025 – June 2025
