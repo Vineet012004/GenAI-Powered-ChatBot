@@ -2,6 +2,15 @@
 
 
 
+💬 This project includes three chatbot versions:
+  -> A basic NLP chatbot using intents and a trained ML model (NLP_bot)
+  -> An LLM-powered chatbot using LLaMA 3 via LangChain and Streamlit (app.py, new.py)
+  -> A RAG-based chatbot that answers from custom documents using LangChain (customer_service_chatbot_LLM)
+
+
+
+
+
 -> FEATURES
 
 Memory-enabled conversation
